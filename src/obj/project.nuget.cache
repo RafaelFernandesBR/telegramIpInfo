@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "m1OKZ4ZmtqvgiP19J58m8RABMJMp5NeQlNUEQ6RxqZJDsQEbuL3THUVrmVg+Dgcc/LW62xiWH/3NXxcfxBustA==",
+  "success": true,
+  "projectFilePath": "/mnt/d/documentos/dotnet/telegran/telegran.csproj",
+  "expectedPackageFiles": [
+    "/home/rafael/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/home/rafael/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
+    "/home/rafael/.nuget/packages/telegram.bot/17.0.0/telegram.bot.17.0.0.nupkg.sha512",
+    "/home/rafael/.nuget/packages/telegram.bot.extensions.polling/1.0.2/telegram.bot.extensions.polling.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
