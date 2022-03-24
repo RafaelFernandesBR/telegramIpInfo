@@ -5,7 +5,7 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using telegramIp;
 
-var botClient = new TelegramBotClient("1820018763:AAHTTC5m_AvjaGoo8_sinIfTZ0HHRW3HK2c");
+var botClient = new TelegramBotClient("{you token}");
 var ipTl = new getInfo();
 
 using var cts = new CancellationTokenSource();
