@@ -5,7 +5,7 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using telegramIp;
 
-var botClient = new TelegramBotClient("{token}");
+var botClient = new TelegramBotClient("1820018763:AAHTTC5m_AvjaGoo8_sinIfTZ0HHRW3HK2c");
 var ipTl = new getInfo();
 
 using var cts = new CancellationTokenSource();
@@ -24,7 +24,12 @@ botClient.StartReceiving(
 var me = await botClient.GetMeAsync();
 
 Console.WriteLine($"Start listening for @{me.Username}");
-Console.ReadLine();
+
+//definindo para fechar o programa no terminal com ctrl+c
+var cancellationTokenSource = new CancellationTokenSource();
+AppDomain.CurrentDomain.ProcessExit += (s, e) => cancellationTokenSource.Cancel();
+Console.CancelKeyPress += (s, e) => cancellationTokenSource.Cancel();
+await Task.Delay(-1, cancellationTokenSource.Token).ContinueWith(t => { });
 
 // Send cancellation request to stop bot
 cts.Cancel();
